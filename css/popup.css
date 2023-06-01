@@ -1,0 +1,261 @@
+
+.profile-container.BlurActive {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+ }
+ 
+ .popup {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    height: 400px;
+    border-radius: 10px;
+ }
+
+ .popup2 {
+   position: fixed;
+   top: 40%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 60%;
+   padding: 50px;
+   box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+   background: #fff;
+   visibility: hidden;
+   opacity: 0;
+   transition: 0.5s;
+   height: 65%;
+   border-radius: 10px;
+}
+ 
+ 
+ .popup.BlurActive {
+ 
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+ }
+ 
+ .nav-bar.BlurActive {
+    visibility: hidden;
+    opacity: 0;
+ }
+ 
+ .popup-btn {
+    background: #1876f2;
+    padding: 15px;
+    width: 160px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+ }
+ 
+ .popup-btn.close{
+    background: crimson;
+ }
+ 
+ .popup-btn.close:hover {
+    color: crimson;
+    background: rgba(177, 55, 79, 0.575);
+    font-weight: bold;
+ }
+ 
+ .popup-btn:hover {
+    color: #083272;
+    background: #6978ff;
+    font-weight: bold;
+ }
+ 
+ .popup form textarea {
+    width: 100%;
+    font-size: 25px;
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid #084cdf;
+    background: transparent;
+    resize: none;
+ 
+ }
+ .popup2 div.inputcontrol p {
+   max-height: 80px;
+   overflow: auto;
+ }
+ .popup2 form p {
+   width: 100%;
+   font-size: 17px;
+   border-radius: 5px;
+   outline: 0;
+   border: 1px solid #084cdf;
+   background: transparent;
+   resize: none;
+   padding: 5px;
+
+}
+ 
+ .popup .inputcontrol label {
+    margin: 15px 10px;
+    font-size: large;
+    font-size: 20px;
+    font-weight: bold;
+ }
+ 
+ .popup .btn-cont {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+ }
+
+ 
+ .form-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 60px;
+    
+ }
+ 
+ .form-container form {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    background: #fff;
+    width: 500px;
+ }
+ 
+ .form-container form h3 {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #333;
+ }
+ 
+ 
+ .form-container form input,
+ .form-container form select {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 17px;
+    margin: 8px 0;
+    background: #9e1313;
+    border-radius: 5px;
+ }
+ 
+ 
+ 
+ .form-container form label {
+    font-size: medium;
+    margin-left: 5px;
+ }
+ 
+ .inputcontrol {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ 
+ 
+ .inputcontrol.error input {
+    border: rgb(255, 0, 0) solid 2px;
+ }
+ 
+ .inputcontrol.succes input {
+    border: rgb(0, 255, 76) solid 2px;
+ }
+ 
+ .inputcontrol .error {
+    color: red;
+ }
+ 
+ 
+ 
+ .form-container form select option {
+    background: #fff;
+ }
+ 
+ .form-container form .form-btn {
+    background: #fbd0d9;
+    color: crimson;
+    text-transform: capitalize;
+    font-size: 20px;
+    cursor: pointer;
+ }
+ 
+ .form-container form .form-btn:hover {
+    background: crimson;
+    color: #fff;
+ }
+ 
+ .form-container form p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+ }
+ 
+ .form-container form p a {
+    color: crimson;
+ }
+ 
+ .form-container form .error-msg {
+    margin: 10px 0;
+    display: block;
+    background: crimson;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+ }
+
+ .popclose{
+   width: 20px;
+   height: 20px;
+   margin-left: 98%;
+   cursor: pointer;
+ }
+
+ .popup input[type=file]{
+   border: 1px solid #084cdf;
+   border-radius:10px ;
+ }
+
+.popup input[type=file]::file-selector-button {
+   margin-right: 20px;
+   border: none;
+   background: #084cdf;
+   padding: 10px 20px;
+   border-radius: 10px;
+   color: #fff;
+   cursor: pointer;
+   transition: background .2s ease-in-out;
+ }
+ 
+ input[type=file]::file-selector-button:hover {
+   background: #0d45a5;
+}
+ 
+ .popup label{
+   font-size: 70px;
+   font-weight: 500;
+   color: #553c9a;
+ }
+

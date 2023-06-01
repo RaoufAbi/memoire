@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Muli:wght@400;500&display=swap");
+
+body {
+  font-family: "Baloo Bhai 2", cursive;
+  background: rgb(228, 230, 240);
+background: radial-gradient(circle, rgb(232, 233, 237) 0%, rgb(211, 231, 244) 100%);
+}
+
+.containerFluid {
+  width: 82%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.containerFluid h2 {
+  color: crimson;
+  position: relative;
+  width: 20rem;
+  margin:20px 0 ;
+}
+
+.containerFluid h2::after {
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  right: 18px;
+  width: 70px;
+  height: 2px;
+  background-color: coral;
+}
+
+.accordion {
+  width: 100%;
+  padding: 10px 5px;
+  border: 2px solid #6db5ff;
+  cursor: pointer;
+  border-radius: 50px;
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+}
+
+
+
+.accordion h5 {
+  font-size: 22px;
+  margin: 0;
+  padding: 3px 0 0 0;
+  font-weight: normal;
+  color: #1f5c9a;
+}
+
+.accordion .active {
+  background-color: #6db5ff;
+  color: #fff;
+}
+
+.accordion .active .icon {
+  background: url(https://raw.githubusercontent.com/Tusar78/responsive-accordion/main/images/toggle-bg.png)
+    no-repeat 8px -25px #fff;
+}
+
+.panel {
+  padding: 0 15px;
+  border-left: 1px solid #6db5ff;
+  margin-left: 25px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: justify;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.3s ease-in;
+}

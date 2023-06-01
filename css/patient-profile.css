@@ -1,0 +1,94 @@
+/******** PROFILE PATIENT ********/
+
+.container-patient-profile{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}   
+.left-col{
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    margin-top: 20px;
+    flex-basis: 33%;
+}
+
+.medecin-suivi{
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    margin-top: 20px;
+    flex-basis: 65%;
+}
+
+.medecin-suivi h3 {
+    text-transform: capitalize;
+    width: 265px;
+    border-bottom: 1px solid rgb(34, 34, 34);
+}
+
+.medecin-suivi h3::first-letter{
+    color: rgb(56, 236, 95);
+    font-size: 30px;
+}
+.liste-medecin{
+    margin-top: 20px;;
+}
+
+.liste-medecin .accordion{
+    background: #8da6c2;
+    position: relative;
+    width: 100%;
+    font-size: 19px;
+    padding: 10px;
+    margin-top:10px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    display: flex;
+    transition: .5s;
+    justify-content: space-between;
+
+    cursor: pointer;
+}
+
+.accordion .icon {
+    margin: 0 10px 0 0;
+    font-weight: bolder;
+    transition: all 0.5s ease-in;
+}
+
+
+.liste-medecin .accordion:hover {
+    transform: scale(1.02);
+    background: rgba(95, 158, 160, 0.6);
+}
+
+.panel {
+
+    padding: 0 15px;
+    margin: 10px 25px;
+    
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: justify;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.3s ease-in;
+}
+
+.panel .element{
+    background: #A5C4D4;
+    position: relative;
+    width: 100%;
+    font-size: 19px;
+    padding: 10px;
+    margin-top:10px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;    
+}
+

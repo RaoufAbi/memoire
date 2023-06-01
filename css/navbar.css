@@ -1,0 +1,159 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+
+/* navbar style */
+
+.nav-bar li,a{
+   font-weight: 500;
+   font-size: 16px;
+   color: #fff;
+   text-decoration: none;
+}
+
+.nav-bar{
+   top: 0;
+   position: fixed;
+   z-index: 999;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 30px 70px;
+   background: #5465FF;
+   height: 80px;
+}
+.photo_profil {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   cursor: pointer;
+   
+}
+
+.logo{
+   cursor: pointer;
+   font-size: 27px;
+   font-weight: bold;
+}
+
+.nav_links{
+   list-style: none;
+}
+ 
+.nav_links li{
+   display: inline-block;
+   padding: 0 20px;
+}
+
+.nav_links li a {
+   transition: all 0.3s ease 0;
+}
+
+.nav_links li a:hover {
+   color: #000;
+   opacity: 0.8;
+}
+
+.profile{
+   margin-right: 70px;
+}
+ 
+ /*  Menu Profil  */
+ 
+ .menu {
+    position: fixed;
+    top: 80px;
+    right: 0.51%;
+    width: 320px;
+    background: #173857;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    z-index: 10;
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+ }
+ 
+ .menu.active {
+ 
+    visibility: visible;
+    opacity: 1;
+ }
+ 
+ 
+ 
+ .user-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+ 
+ }
+ 
+ .user-info h2 {
+    font-weight: 500;
+ }
+ 
+ .user-info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+ }
+ 
+ .menu hr {
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin: 15px 0 10px;
+ }
+ 
+ .menu-function img {
+    width: 40px;
+    height: 40px;
+ }
+ 
+ .menu-function ul li {
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid rgba(138, 138, 138, 0.274);
+    display: flex;
+    align-items: center;
+ 
+ }
+ 
+ .menu-function ul li img {
+    max-width: 40px;
+    margin-right: 20px;
+    opacity: 0.5;
+    transition: 0.5s;
+ 
+ }
+ 
+ .menu-function ul li:hover img {
+    opacity: 1;
+ }
+ 
+ .menu-function ul li a {
+    display: inline-block;
+    color: rgb(245, 245, 245);
+    font-weight: 500;
+    font-size: larger;
+    transition: 0.5s;
+ }
+ 
+ .menu-function ul li:hover a {
+    color: #8c5ff5;
+    font-size: 130%;
+ }
+ 
